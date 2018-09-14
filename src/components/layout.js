@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
-
-class Layout extends Component {
+import Header from './headernavbar/header';
+import Navbar from './headernavbar/navbar';
+ class Layout extends Component {
   render() {
     return (
-      <div className='app'>
-        <h1>ecom</h1>
+      <div
+      <div className='layout'>
         {this.props.children}
+        <Header/>
+        <Navbar/>
       </div>
+      
     );
   }
-}
-
-export default Layout;
